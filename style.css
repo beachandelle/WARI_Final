@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(to bottom, #237b87 1%,#74b260 100%);
+  margin: 0;
+}
+
+header {
+  background-color: #031926;
+  background-repeat: no-repeat;
+  border-top:#73f4a6 5px solid;
+  border-bottom:#73f4a6 5px solid;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  margin: 30px auto;
+  padding: 0px;
+  text-align: center;
+
+}
+
+a {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 80px;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+a:hover {
+  color: #DBE9EE;
+}
+
+header h1 {
+  color:  #F4E9CD;
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #031926;
+  padding: 0px;
+}
+
+h1 {
+  color: ;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+  height: 40%;
+  margin-top: 5%;
+}
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 50px auto 5px;
+  overflow: hidden;
+  position: center;
+  width: 95%;
+  table-layout: fixed;
+}
+
+thead th {
+  background-color: #031926;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+}
+
+tr th{
+  background-color: #031926;
+  color: #F4E9CD;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 3px;
+  width: 100%;
+  top: 0px;
+  text-align: center;
+}
+
+/*
+@media screen and (max-width: 1300px) {
+  tr th {
+    font-size: 10px;
+  }
+}
+*/
+
+.short-text { display: none; }
+
+@media (max-width: 1200px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+
