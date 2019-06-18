@@ -5,9 +5,46 @@
   
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+    var default_lon = 14.0364;
+    var default_lat = 121.6533;
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else { 
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    function showError(error) {
+      alert("error");
+      alert(error);
+    }
+
+    function showPosition(position) {
+      alert(position);
+
+    getLocation();
+      
+      lon =  . . . .;
+      lat = . . . . .;
+      // yung position, may lon at lat
+      // pagkatapos kunin ung lon at lat
+      // Tatawagin yung API nung weather gamit yung lon at lat 
+      // Pano magreplace ng value sa string
+      // http://weatherapi.osomtha/something/something?lon=2323&lat=21323
+      // Study JQuery Ajax
+
+      // $.get("http://weatherapi.osomtha/something/something?lon=2323&lat=21323")
+
+
+    }
+
+  </script>
 </head>
 <body>
-
   <header>
   <div>
     <h1>WARI</h1>
