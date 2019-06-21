@@ -24,12 +24,10 @@
     }
 
     function showPosition(position) {
-      alert(position);
+      console.log(position);
 
-    getLocation();
-      
-      lon =  . . . .;
-      lat = . . . . .;
+      lon = position.coords.longitude;
+      lat = position.coords.latitude;
       // yung position, may lon at lat
       // pagkatapos kunin ung lon at lat
       // Tatawagin yung API nung weather gamit yung lon at lat 
@@ -38,10 +36,10 @@
       // Study JQuery Ajax
 
       // $.get("http://weatherapi.osomtha/something/something?lon=2323&lat=21323")
-
-
     }
 
+    getLocation();
+    
   </script>
 </head>
 <body>
