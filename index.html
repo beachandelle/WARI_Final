@@ -8,6 +8,7 @@
     <script>
     var default_lon = 14.0364;
     var default_lat = 121.6533;
+    var lat, lon;
     var x = document.getElementById("demo");
 
     function getLocation() {
@@ -31,16 +32,18 @@
       // yung position, may lon at lat
       // pagkatapos kunin ung lon at lat
       // Tatawagin yung API nung weather gamit yung lon at lat 
-      // Pano magreplace ng value sa string
       // http://weatherapi.osomtha/something/something?lon=2323&lat=21323
+      // Pano magreplace ng value sa string
       // Study JQuery Ajax
 
       // $.get("http://weatherapi.osomtha/something/something?lon=2323&lat=21323")
+
+      get_api_data();
     }
 
     getLocation();
     
-  </script>
+</script>
 </head>
 <body>
   <header>
@@ -49,7 +52,7 @@
     <nav>
       <a href="./index.html">WARI</a>
       <a href="./index_2.html">NEW</a>
-    </nav>
+     </nav>
   </header>
 
 
@@ -128,7 +131,7 @@
       <td>4 weeks</td>
       </tr>
        <tr>
-      <td>Luya</td>
+      <td>Pechay</td>
       <td>4 weeks</td>
       </tr>
        <tr>
@@ -143,5 +146,7 @@
     <h3>BY: RESEARCH GROUP OF LPIHS</h3>
   </footer>
 
+<script src="/.js/jquery.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
