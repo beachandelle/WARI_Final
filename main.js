@@ -47,12 +47,10 @@ function get_api_data(){
                 // console.log(sum_of_temp/item_per_day)
 
                 formatted_data.push({
-                  date_string: _date.toISOString().slice(0,10),
-                  day_of_week: date.getDay,
-                  avg_temp: (sum_of_temp/item_per_day),
-                  avg_humidity,
+                  day_of_week: weekdays[_date.getDay()],
+                  avg_temp: sum_of_temp/item_per_day,
+                  avg_humidity:sum_of_humidity/item_per_day,
                   weather_string: 1
-                  ["jsgdfvdf"]
                 })
 
                 sum_of_temp= 0;

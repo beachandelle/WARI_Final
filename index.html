@@ -2,48 +2,10 @@
 <html>
 <head>
 
-  
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
-    var default_lon = 14.0364;
-    var default_lat = 121.6533;
-    var lat, lon;
-    var x = document.getElementById("demo");
-
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-      } else { 
-        alert("Geolocation is not supported by this browser.");
-      }
-    }
-
-    function showError(error) {
-      alert("error");
-      alert(error);
-    }
-
-    function showPosition(position) {
-      console.log(position);
-
-      lon = position.coords.longitude;
-      lat = position.coords.latitude;
-      // yung position, may lon at lat
-      // pagkatapos kunin ung lon at lat
-      // Tatawagin yung API nung weather gamit yung lon at lat 
-      // http://weatherapi.osomtha/something/something?lon=2323&lat=21323
-      // Pano magreplace ng value sa string
-      // Study JQuery Ajax
-
-      // $.get("http://weatherapi.osomtha/something/something?lon=2323&lat=21323")
-
-      get_api_data();
-    }
-
-    getLocation();
-    
-</script>
+  <script src="./js/main.js"></script>
+  <script src="./js/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -64,7 +26,7 @@
 
 
 <div>
-  <table>
+  <table id="weeks">
     <thead>
       <tr>
         <th>Day</th>
@@ -146,7 +108,48 @@
     <h3>BY: RESEARCH GROUP OF LPIHS</h3>
   </footer>
 
-<script src="/.js/jquery.min.js"></script>
-<script src="./js/main.js"></script>
+
+<script>
+    var default_lon = 14.0364;
+    var default_lat = 121.6533;
+    var lat, lon;
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+
+      w_table = document.getElementById("weeks");
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else { 
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    function showError(error) {
+      alert("error");
+      alert(error);
+    }
+
+    function showPosition(position) {
+      console.log(position);
+
+      lon = position.coords.longitude;
+      lat = position.coords.latitude;
+      // yung position, may lon at lat
+      // pagkatapos kunin ung lon at lat
+      // Tatawagin yung API nung weather gamit yung lon at lat 
+      // http://weatherapi.osomtha/something/something?lon=2323&lat=21323
+      // Pano magreplace ng value sa string
+      // Study JQuery Ajax
+
+      // $.get("http://weatherapi.osomtha/something/something?lon=2323&lat=21323")
+
+      get_api_data();
+    }
+
+    getLocation();
+
+</script>
+
 </body>
 </html>
