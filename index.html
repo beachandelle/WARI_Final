@@ -4,109 +4,141 @@
 
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="./js/library.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/jquery.min.js"></script>
+  <script src="./js/modernizr.js"></script>
 </head>
 <body>
   <header>
-  <div>
-    <h1>WARI</h1>
-    <nav>
-      <a href="./index.html">WARI</a>
-      <a href="./index_2.html">NEW</a>
-     </nav>
+    <div>
+      <h1>WARI</h1>
+      <nav>
+        <a href="./index.html">WARI</a>
+        <a href="./index_2.html">NEW</a>
+       </nav>
+    </div>
   </header>
 
-
-  </div>
-  <div class="welcome">
-    <h1>Weather Application for Real-time Information</h1>
-  </div>
-
-
+<div class="welcome">
+  <h1>Weather Application for Real-time Information</h1>
+</div>
+<div class="se-pre-con"></div>
 
 <div>
   <table id="weeks">
     <thead>
       <tr>
         <th>Day</th>
-        <th><span class="full-text">Monday</span>
-<span class="short-text">Mon</span></th>
-        <th><span class="full-text">Tuesday</span>
-<span class="short-text">Tue</span></th> 
-        <th><span class="full-text">Wednesday</span>
-<span class="short-text">Wed</span></th>
-        <th><span class="full-text">Thursday</span>
-<span class="short-text">Thu</span></th>
-        <th><span class="full-text">Friday</span>
-<span class="short-text">Fri</span></th>
-        <th><span class="full-text">Saturday</span>
-<span class="short-text">Sat</span></th>
-        <th><span class="full-text">Sunday</span>
-<span class="short-text">Sun</span></th>
+        <th><span class="short-text">Monday</span></th>
+        <th><span class="short-text">Tuesday</span></th>
+        <th><span class="short-text">Wednesday</span></th>
+        <th><span class="short-text">Thursday</span></th> 
+        <th><span class="short-text">Friday</span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>Weather</th>
-        <td>28°</td>
-        <td>30°</td> 
-        <td>27°</td>
-        <td>34°</td>
-        <td>25°</td>
-        <td>43°</td>
-        <td>31°</td>
+        <th>Temperature</th>
+          <td>28°</td>
+          <td>30°</td> 
+          <td>27°</td>
+          <td>34°</td>
+          <td>25°</td>
       </tr>
+      <tr>
+        <th>Humidity</th>
+          <td>90</td>
+          <td>91</td>
+          <td>92</td>
+          <td>93</td>
+          <td>94</td>
+      </tr>
+       <tr>
+        <th>Rain</th>
+          <td>91</td>
+          <td>92</td>
+          <td>93</td>
+          <td>94</td>
+          <td>95</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
 
 <div>
-<table>
-  <thead>
-    <tr>
-      <th>Plants</th>
-      <th>Planting Time</th>
-    </tr>
-    <tr>
-      <td>Okra</td>
-      <td>4 weeks</td>
+  <table>
+    <thead>
+      <tr>
+        <th>Plants</th>
+        <th>Planting Time</th>
       </tr>
-       <tr>
-      <td>Patola</td>
-      <td>3 weeks</td>
-      </tr>
-       <tr>
-      <td>Talong</td>
-      <td>2 weeks</td>
-      </tr>
-       <tr>
-      <td>Upo</td>
-      <td>3 weeks</td>
-      </tr>
-       <tr>
-      <td>Luya</td>
-      <td>4 weeks</td>
-      </tr>
-       <tr>
-      <td>Ampalaya</td>
-      <td>4 weeks</td>
-      </tr>
-       <tr>
-      <td>Pechay</td>
-      <td>4 weeks</td>
-      </tr>
-       <tr>
-      <td>Kamatis</td>
-      <td>2 weeks</td>
-      </tr>
-</thead>
-</table>
+    </thead>
+    <tbody id="plants">
+        <tr id="okra">
+          <td>Okra</td>
+          <td>8 weeks</td>
+        </tr>
+        <tr id="patola">
+          <td>Patola</td>
+          <td>14 weeks</td>
+        </tr>
+        <tr id="talong">
+          <td>Talong</td>
+          <td>10 weeks</td>
+        </tr>
+        <tr id="upo">
+          <td>Upo</td>
+          <td>10 weeks</td>
+        </tr>
+        <tr id="luya">
+          <td>Luya</td>
+          <td>32 weeks</td>
+        </tr>
+        <tr id="ampalaya">
+          <td>Ampalaya</td>
+          <td>10 weeks</td>
+        </tr>
+        <tr id="kamatis">
+          <td>Kamatis</td>
+          <td>12 weeks</td>
+        </tr>
+        <tr id="sitaw">
+          <td>Sitaw</td>
+          <td>7 weeks</td>
+        </tr>
+        <tr id="pechay">
+          <td>Pechay</td>
+          <td>5 weeks</td>
+        </tr>
+        <tr id="labanos">
+          <td>Labanos</td>
+          <td>3 weeks</td>
+        </tr>
+        <tr id="repolyo">
+          <td>Repolyo</td>
+          <td>10 weeks</td>
+        </tr>
+        <tr id="mustasa">
+          <td>Mustasa</td>
+          <td>5 weeks</td>
+        </tr> 
+        <tr id="spinach">
+          <td>Spinach</td>
+          <td>6 weeks</td>
+        </tr>
+        <tr id="kalabasa">
+          <td>Kalabasa</td>
+          <td>10 weeks</td>
+        </tr>
+      </tbody>
+  </table>
 </div>
 
-  <footer>
-    <h3>BY: RESEARCH GROUP OF LPIHS</h3>
-  </footer>
+<footer>
+  <h3>BY: RESEARCH GROUP OF LPIHS</h3>
+</footer>
 
 
 <script>
@@ -132,9 +164,11 @@
 
     function showPosition(position) {
       console.log(position);
-
+      // [23, 26, 26, 26, 26, 3, 1, 1]
       lon = position.coords.longitude;
       lat = position.coords.latitude;
+      // lon = 120.5960;
+      // lat = 16.4023;
       // yung position, may lon at lat
       // pagkatapos kunin ung lon at lat
       // Tatawagin yung API nung weather gamit yung lon at lat 
